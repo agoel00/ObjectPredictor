@@ -5,8 +5,8 @@
 
 <!-- bs4 css -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
-
-
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -30,19 +30,20 @@
 	
 </head>
 <body>
-
-  <h1 style="text-align: center;">Object Predictor</h1>
-  <hr>
-  <h4 id ='status' style="text-align: center;">Loading Model... </h4>	  
-  <hr>
+  <div class="jumbotron bg-primary">
+  <h1 style="text-align: center;">Object Predictor</h1></div>
+  
+  <div class="jumbotron jumbotron-fluid" style="top:0px;">
+  <h4 id ='status' style="text-align: center;">Loading Model...</h4>	  
+  
 <div class="row">
   <div class="col" style ='margin-left:100px;'>
 <!-- <h4 id ='status' >Loading Model... </h4>	   -->
-<canvas id="canvas" width="300" height="300" class="canvas" style="border:1px solid #b9bfc9;margin-top:25px;"></canvas>
+<canvas id="canvas" width="300" height="300" class="canvas" style="border:2px solid black;margin-top:25px;"></canvas>
 <div class="btn-group" style = 'margin-top:40px; '>
 <input type="range" min="5" max="20" value="10" class="slider" id="myRange" style ='margin-top:20px;'>
-<button type="button" class="btn btn-outline-primary" onclick ='erase()' style ='margin-left:10px;' disabled>Clear</button>
-    </div>   
+<button type="button" class="btn btn-primary" onclick ='erase()' style ='margin-left:10px;' disabled>Clear</button>
+    </div>
 </div>
   <div class="col">
     <section style="margin-top:120px">
@@ -55,7 +56,7 @@
       </ul>
   </section>
 </div>
-</div>  
+</div></div>
 <hr>
 </body>
 <script>
