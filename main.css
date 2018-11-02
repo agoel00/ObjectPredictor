@@ -31,3 +31,11 @@
     background: #007AFF;
     cursor: pointer;
 }
+.jumbotron.bg-primary{
+    font-family: 'Lobster', sans-serif;
+    color: white;
+}
+.jumbotron.jumbotron-fluid{
+    font-family: 'Poor Story', cursive;
+
+}
