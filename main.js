@@ -41,8 +41,10 @@ function setTable(top5, probs) {
         let sym = document.getElementById('sym' + (i + 1))
         let prob = document.getElementById('prob' + (i + 1))
         sym.innerHTML = top5[i]
-        prob.innerHTML = Math.round(probs[i] * 100) + "%"
+        prob.innerHTML = Math.round(probs[i] * 100)
     }
+    //create the pie 
+    createPie(".pieID.legend", ".pieID.pie");
 
 }
 
@@ -140,8 +142,10 @@ function getClassNames(indices) {
 load the class names 
 */
 async function loadDict() {
-    
-    loc = 'model2/class_names.txt'
+    if (mode == 'ar')
+        loc = 'model2/class_names_ar.txt'
+    else
+        loc = 'model2/class_names.txt'
     
     await $.ajax({
         url: loc,
@@ -237,6 +241,8 @@ function allowDrawing() {
     canvas.isDrawingMode = 1;
     if (mode == 'en')
         document.getElementById('status').innerHTML = 'Model Loaded';
+    else
+        document.getElementById('status').innerHTML = 'تم التحميل';
     $('button').prop('disabled', false);
     var slider = document.getElementById('myRange');
     slider.oninput = function() {
