@@ -13,3 +13,6 @@
 
 Neural Network trained on Quick, Draw! dataset by google. 
 It is trained using Keras and achieved around 88% test accuracy.
+
+# License 
+MIT
