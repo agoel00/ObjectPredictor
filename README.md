@@ -14,5 +14,8 @@
 Neural Network trained on Quick, Draw! dataset by google. 
 It is trained using Keras and achieved around 88% test accuracy.
 
+The neural network as saved and served using TensorFlowJS. 
+Everything runs client-side!
+
 # License 
 MIT
